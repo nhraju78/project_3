@@ -5,98 +5,195 @@
 }
 
 .container{
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 a{
   text-decoration: none;
 }
-ul li{
+li{
   list-style: none;
 }
 body{
   font-family: 'Roboto', sans-serif;
 }
-/* top_header start */
-header .top_header{
-  background-color: #F5F5F5;
-  padding: 15px 0;
-}
-.container:after{
-  content: "";
-  display: block;
-  clear: both;
-}
-header .logo_area{
-  float: left;
-}
-header nav .navigation {
-  float: left;
-  line-height: 38px;
-}
-header nav .navigation ul{
-  margin-left: 500px;
-  background-color: ;
-}
-header nav .navigation ul li{
-  display: inline-block;
-  padding: 6px 16px;
-}
-header nav .navigation ul li a{
-  color: #343434;
-  font-size: 16px;
-  line-height: 18.75px;
-}
-header .social_link{
-  text-align: right;
-  line-height: 40px;
+/* header start */
+    header nav{
+      margin-top: 24px;
+      height: 80px;
+    }
+    header nav .logo{
+      width: 30%;
+      float: left;
+    }
+    header nav .navigation{
+      width: 40%;
+      float: left;
+      padding: 10px 0;
+    }
+    header nav .social_link{
+      width: 30%;
+      float: left;
+    }
+    header nav .navigation ul{
+      text-align: center;
+      
+    }
+    header nav .navigation ul li{
+      display: inline-block;
+      margin-left: 12px;
+    }
+    header nav .navigation ul li a{
+      padding: 6px 16px;
+      color: #343434;
+      border: 1px solid #DDDDDD;
+      border-radius: 999px;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 400;
+      text-align: center;
+    }
+    header nav .navigation ul li a:hover{
+      background-color: #DDDDDD;
+    }
+
+    header nav .social_link{
+      padding: 11px 0;
+    }
+    header nav .social_link ul{
+      text-align: center;
+      
+    }
+    header nav .social_link ul li{
+      display: inline-block;
+      margin-left: 16px;
+    }
+    header nav .social_link ul li a{
+      border: 1px solid #DDDDDD;
+      border-radius: 999px;
+      padding: 6px 8px;
+      color: #54554D;
+      font-size: 24px;
+      line-height: 27px;
+      font-weight: 400;
+      text-align: center;
+    }
+    header nav .social_link ul li a:hover{
+      background-color: #DDDDDD;
+    }
+    header .banner{
+      background-image: url(../images/banner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+    }
+    header .banner .content{
+      color: white;
+      max-width: 665px ;
+      text-align: center;
+      margin:auto;
+      padding: 155px 0;
+    }
+    header .banner .content h2{
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    header .banner .content p{
+      margin: 37px 0;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+    header .banner .content a{
+      color: white;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 700;
+      background-color: #4885ED;
+      padding: 8px 20px;
+      border-radius: 28px;
+    }
+/* header part end */
+
+/* main area start - work area*/
+    main .work{
+      margin: 74px 0;
+    }
+    main .work .work_left{
+      width: 50%;
+      float: left;
+    }
+    main .work .work_right{
+      width: 50%;
+      float: left;
+      margin-top: 56px;
+    }
+    main .work .work_right .content h2{
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 56px;
+      color: #000000;
+    }
+    main .work .work_right span{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26px;
+      color: #000000;
+    }
+    main .work .work_right .head{
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18px;
+      color: #000000;
+    }
+    main .work .work_right p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      color: #000000;
+    }
+ 
+    main .work .work_right .card_one .content1{
+      width: 48%;
+      float: left;
+      border: 1px solid #DDDDDD;
+      padding: 30px 26px;
+    }
+    main .work .work_right .card_one .content2{
+      width: 48%;
+      float: left;
+      border: 1px solid #DDDDDD;
+      margin-left: 16px;
+      padding: 30px 26px;
+    }
   
-}
-header .social_link a{
-  margin-left: 36px;
-  font-size: 24px;
-  line-height: 27.6px;
-  font-weight: 400;
-  color: #54554D;
-}
-
-/* top_header end */
-
-/* header_banner start */
-.header_banner{
-  background: url(../images/banner.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 140px 0;
-}
-.header_banner .banner_content{
-  max-width: 665px;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-}
-.header_banner .banner_content .para_1{
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700px;
-}
-.header_banner .banner_content .para_2{
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400px;
-  padding: 37px 0;
-}
-.header_banner .banner_content .btn_1{
-  background-color: #4885ED;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 28px;
-}
-/* header_banner end */
-
-/* work_area_main start */
+    main .work .work_right .card_two .content3{
+      width: 48%;
+      float: left;
+      border: 1px solid #DDDDDD;
+      padding: 30px 26px;
+      margin-top: 16px;
+    }
+    main .work .work_right .card_two .content4{
+      width: 48%;
+      float: left;
+      border: 1px solid #DDDDDD;
+      margin-left: 16px;
+      padding: 30px 26px;
+      margin-top: 16px;
+    }
+    
+/* main area start - emd work area*/
 .work_area_main{
   margin: 71px;
 }
